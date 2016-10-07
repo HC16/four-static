@@ -3,18 +3,14 @@ A distributed multi-coin wallet manager.
 
 ## Local Setup
 
-#### Pre-requisites
-```
-webpack
-```
-
 #### Installation
 1. Clone the repo: `git clone https://github.com/adamsidiali/firechain`
 2. Install dependencies: `npm i`
+3. Install Webpack globally if you don't have it: `npm i -g webpack`
 
 #### Usage
 1. Start the server: `npm run dev`
-2. Navigate to `http://localhost:8080/` to login or access the dashboard
+2. Navigate to `http://localhost:8080/` to use the app
 
 
 #Contributors
