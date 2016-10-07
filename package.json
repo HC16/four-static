@@ -1,0 +1,41 @@
+{
+  "name": "firechain",
+  "version": "0.1.0",
+  "description": "A blockchain wallet manager.",
+  "main": "./src/core/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billto/billto.git"
+  },
+  "author": "adamsidiali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/billto/billto/issues"
+  },
+  "homepage": "https://github.com/billto/billto#readme",
+  "devDependencies": {
+    "babel-preset-airbnb": "^2.1.1",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.16.0",
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0",
+    "local-storage": "^1.4.2",
+    "material-ui": "^0.16.0",
+    "moment": "^2.15.1",
+    "radium": "^0.18.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1",
+    "react-tap-event-plugin": "^1.0.0"
+  }
+}
