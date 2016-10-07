@@ -3,6 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: [
+    'babel-polyfill',
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
     './src/core/index.js',
@@ -18,7 +19,7 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          presets: ['es2015', 'react'],
+          presets: ['es2015', 'react', 'stage-0'],
         },
         progress: true,
       },
