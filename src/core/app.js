@@ -1,16 +1,24 @@
-import React from 'react';
-import radium from 'radium';
-import styles from './styles/app.js';
+import React, {PropTypes} from 'react';
 
-class App extends React.Component {
-  render() {
-    console.log('app loaded');
-    return (
-      <div style={styles.base}>
-        {this.props.children}
+import radium from 'radium';
+import styles from './styles/app';
+
+const App = (props) => {
+  console.log('FIRECHAIN v0.1.0 initialized.'); // eslint-disable-line
+  return (
+    <div style={styles.content}>
+      <div style={styles.navbar.base}>
+        <span style={styles.navbar.brand}>
+          Firechain
+        </span>
       </div>
-    );
-  }
+      {props.children}
+    </div>
+  );
+};
+
+App.propTypes = {
+  children: PropTypes.node,
 };
 
 export default radium(App);

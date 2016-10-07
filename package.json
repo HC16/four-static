@@ -1,7 +1,7 @@
 {
   "name": "firechain",
   "version": "0.1.0",
-  "description": "A blockchain wallet manager.",
+  "description": "A distributed multi-coin wallet manager.",
   "main": "./src/core/app.js",
   "scripts": {
     "dev": "node_modules/.bin/webpack-dev-server",
