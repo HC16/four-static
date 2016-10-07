@@ -1,5 +1,27 @@
+import {
+  Route,
+  Router,
+  browserHistory,
+} from 'react-router';
+
 import App from './app';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render}             from 'react-dom';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+function run() {
+  render(
+    (
+    <Router history={browserHistory}>
+      <Route path="/" component={App} />
+    </Router>
+    ),
+    document.getElementById('app')
+  );
+}
+
+const loadedStates = ['complete', 'loaded', 'interactive'];
+if (loadedStates.includes(document.readyState) && document.body) {
+  run();
+} else {
+  window.addEventListener('DOMContentLoaded', run, false);
+}

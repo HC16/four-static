@@ -1,10 +1,19 @@
 import React from 'react';
+import radium from 'radium';
+import styles from './styles/app.js';
 
-export default class App extends React.Component {
+class App extends React.Component {
   render() {
     console.log('app loaded');
     return (
-      <span>app loaded!</span>
+      <div style={styles.base}>
+        <img
+          src="https://dl.dropboxusercontent.com/s/4pd0zkg58bz88jy/firechain-logo3.png"
+          style={styles.logo_img}
+        />
+      </div>
     );
   }
 };
+
+export default radium(App);
