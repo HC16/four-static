@@ -7,10 +7,7 @@ class App extends React.Component {
     console.log('app loaded');
     return (
       <div style={styles.base}>
-        <img
-          src="https://dl.dropboxusercontent.com/s/4pd0zkg58bz88jy/firechain-logo3.png"
-          style={styles.logo_img}
-        />
+        {this.props.children}
       </div>
     );
   }

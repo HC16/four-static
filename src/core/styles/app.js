@@ -8,8 +8,4 @@ export default {
     justifyContent: 'center',
     alignItems: 'center',
   },
-  logo_img: {
-    width: 200,
-    height: 200,
-  }
 };
