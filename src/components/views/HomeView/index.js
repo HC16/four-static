@@ -1,3 +1,4 @@
+import FC from '../../../lib/FC';
 import React from 'react';
 import styles from './styles';
 
@@ -11,23 +12,25 @@ export default class HomeView extends React.Component {
    */
   initializeFC = (e) => {
     e.preventDefault();
-    console.log(e.target.wallet_address_input.value);
+    const manager = new FC();
+    const address = e.target.wallet_address_input.value;
+    fetch(`https://api.blockcypher.com/v1/btc/main/addrs/${address}/balance`).then((response) => {
+      console.log(response);
+      if (response.status == 200) return response.json();
+    }).then((response) =>  {
+      console.log(response);
+    });
   }
 
   render() {
     return (
-      <div>
-        Enter a wallet address to get started:
-        <form
-          onSubmit={this.initializeFC}
-        >
-          <input
-            style={styles.init_input}
-            type="text"
-            name="wallet_address_input"
-          />
-          <button type="submit">Track</button>
-        </form>
+      <div style={styles.base}>
+        <h1 style={styles.firechain}>Firechain</h1>
+        <p style={styles.tagline}>The decentralized banking platform.</p>
+        <a style={styles.action_button}>
+          Become A Member
+          <i className="material-icons" style={{ marginLeft: 5, fontSize: '1.1em' }}>touch_app</i>
+        </a>
       </div>
     );
   }

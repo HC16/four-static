@@ -7,11 +7,6 @@ const App = (props) => {
   console.log('FIRECHAIN v0.1.0 initialized.'); // eslint-disable-line
   return (
     <div style={styles.content}>
-      <div style={styles.navbar.base}>
-        <span style={styles.navbar.brand}>
-          Firechain
-        </span>
-      </div>
       {props.children}
     </div>
   );

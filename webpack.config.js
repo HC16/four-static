@@ -2,6 +2,7 @@ var HtmlWebpackPlugin =  require('html-webpack-plugin');
 var webpack = require('webpack');
 
 module.exports = {
+  name: 'client',
   entry: [
     'babel-polyfill',
     'webpack-dev-server/client?http://localhost:8080',
@@ -9,7 +10,7 @@ module.exports = {
     './src/core/index.js',
   ],
   output: {
-    path: './dist/',
+    path: './',
     filename: 'index.bundle.js',
   },
   module: {
@@ -23,6 +24,7 @@ module.exports = {
         },
         progress: true,
       },
+      { test: /\.json$/, loader: 'json-loader' }
     ],
   },
   plugins: [
@@ -32,4 +34,10 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
+  node: {
+    console: true,
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
+  }
 };
