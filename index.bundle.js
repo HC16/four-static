@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "e62a63c822715a104b76"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "10fd791e5d6b0a22767f"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -27326,7 +27326,7 @@
 	                { className: 'material-icons', style: _app2['default'].navbarItemIcon },
 	                'public'
 	              ),
-	              'The Network'
+	              'Network'
 	            )
 	          ),
 	          _react2['default'].createElement(
@@ -27340,7 +27340,7 @@
 	                { className: 'material-icons', style: _app2['default'].navbarItemIcon },
 	                'account_balance_wallet'
 	              ),
-	              'The Wallet'
+	              'Wallet'
 	            )
 	          ),
 	          _react2['default'].createElement(
@@ -27354,7 +27354,7 @@
 	                { className: 'material-icons', style: _app2['default'].navbarItemIcon },
 	                'trending_up'
 	              ),
-	              'The Investment'
+	              'Investment'
 	            )
 	          )
 	        ),
@@ -31659,7 +31659,7 @@
 	          _react2['default'].createElement(
 	            'p',
 	            { style: _styles2['default'].tagline },
-	            'The secure, global digital currency banking network.'
+	            'The secure, global digital currency investment network.'
 	          ),
 	          _react2['default'].createElement(
 	            'a',

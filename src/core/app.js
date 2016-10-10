@@ -13,19 +13,19 @@ const App = (props) => {
           <li style={styles.navbarItem}>
             <a style={styles.navbarLink} href="#">
               <i className="material-icons" style={styles.navbarItemIcon}>public</i>
-              The Network
+              Network
             </a>
           </li>
           <li style={styles.navbarItem}>
             <a style={styles.navbarLink} href="#">
               <i className="material-icons" style={styles.navbarItemIcon}>account_balance_wallet</i>
-              The Wallet
+              Wallet
             </a>
           </li>
           <li style={styles.navbarItem}>
             <a style={styles.navbarLink} href="#">
               <i className="material-icons" style={styles.navbarItemIcon}>trending_up</i>
-              The Investment
+              Investment
             </a>
           </li>
         </ul>
