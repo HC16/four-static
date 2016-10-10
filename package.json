@@ -1,7 +1,7 @@
 {
-  "name": "firechain",
+  "name": "Four Static",
   "version": "0.1.0",
-  "description": "A distributed multi-coin wallet manager.",
+  "description": "Static site for Four",
   "main": "./src/core/app.js",
   "scripts": {
     "dev": "node_modules/.bin/webpack-dev-server",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adamsidiali/firechain.git"
+    "url": "https://github.com/HC16/four-static.git"
   },
   "author": "adamsidiali",
   "license": "GPL",
   "bugs": {
-    "url": "https://github.com/adamsidiali/firechain/issues"
+    "url": "https://github.com/HC16/four-static/issues"
   },
-  "homepage": "https://github.com/adamsidiali/firechain#readme",
+  "homepage": "https://github.com/HC16/four-static#readme",
   "devDependencies": {
     "babel-core": "^6.17.0",
     "babel-eslint": "^7.0.0",

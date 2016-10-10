@@ -18,7 +18,7 @@ export default {
   },
   content: {
     width: '100%',
-    position: 'absolute',
+    position: 'fixed',
     top: 0,
     left: 0,
     right: 0,
@@ -28,5 +28,58 @@ export default {
     flexFlow: 'column nowrap',
     justifyContent: 'center',
     alignItems: 'center',
+    overflowY: 'auto',
+    overflowX: 'hidden',
   },
+  navbar: {
+    listStyle: 'none',
+    display: 'flex',
+    flexFlow: 'row nowrap',
+    justifyContent: 'center',
+    margin: 0,
+    position: 'fixed',
+    bottom: 20,
+    left: 0,
+    padding: 0,
+    zIndex: 99999,
+    '@media (max-width:700px)': {
+      display: 'none',
+    }
+  },
+  navbarItem: {
+    display: 'flex',
+    flexFlow: 'row nowrap',
+    alignItems: 'center',
+    flex: '0 0 auto',
+    padding: 0,
+    margin: 'auto 20px',
+    boxSizing: 'border-box',
+  },
+  navbarLink: {
+    textTransform: 'capitalize',
+    fontSize: '0.9em',
+    fontWeight: 700,
+    color: '#ccc',
+    textDecoration: 'none',
+    display: 'flex',
+    flexFlow: 'row nowrap',
+    alignItems: 'center',
+  },
+  navbarItemIcon: {
+    fontSize: '1.1em',
+    margin: 'auto 10px auto 0',
+    color: '#ccc',
+  },
+
+  copyright: {
+    position: 'fixed',
+    bottom: 20,
+    right: 20,
+    padding: 0,
+    zIndex: 99999,
+    color: '#555',
+    fontWeight: 700,
+    fontSize: '0.9em',
+  }
+
 };
