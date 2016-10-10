@@ -1,5 +1,5 @@
 {
-  "name": "Four Static",
+  "name": "four-static",
   "version": "0.1.0",
   "description": "Static site for Four",
   "main": "./src/core/app.js",
